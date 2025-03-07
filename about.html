@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university website design</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/tree-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times mobile-menu-icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">CERTIFICATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars mobile-menu-icon" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+</section>
+<!--about us content-->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>we are the world's largest Platform</h1>
+            <p>Passionate tutor and mentor dedicated to empowering students with knowledge and confidence. 
+                With personalized guidance, I help learners unlock their full potential, master challenging concepts, 
+                and achieve academic success. Committed to fostering a supportive and inspiring learning environment, 
+                I strive to make education engaging, accessible, and transformative for every student.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg">
+        </div>
+    </div>
+</section>
+<!----footer---->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Tutor Mentor Platform empowers students with quality education, hands-on experience, <br>
+        and global opportunities to shape a successful future.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Tutor Mentor</p>
+</section>
+
+<!------javascript for toggle menu---------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+        </script>
+</body>
+</html> 
